@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 //specify where to find the schema
 const Patient = require('./models/patient')
 //connect and display the status
-mongoose.connect('mongodb://localhost:27017/IT6203', { useUnifiedTopology: true, useNewUrlParser: true })
+mongoose.connect('mongodb+srv://admin:alyson77!@cluster0-iym7m.mongodb.net/test?retryWrites=true&w=majority', { useUnifiedTopology: true, useNewUrlParser: true })
     .then(() => { console.log("connected"); })
     .catch(() => { console.log("error connecting"); });
 //parse application/x-www-form-urlencoded
