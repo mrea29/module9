@@ -1,0 +1,16 @@
+<p>new-patient-form works!</p>
+<div>
+    <h3>{{mode}} New Patient Perscription Form</h3>
+    <form (ngSubmit)="onSubmit()" #myForm="ngForm">  
+        <mat-form-field >    
+            <input matInput placeholder="Last Name" id="firstname" [(ngModel)]="firstName" name="firstname" >  
+        </mat-form-field>  
+
+        <mat-form-field >    
+            <input matInput placeholder="Perscription #" id="lastname" [(ngModel)]="lastName" name="lastname" >  
+        </mat-form-field>  
+    <p>    
+        <button type="submit" mat-raised-button color="primary">Submit</button>  
+    </p>
+    </form>
+</div>
