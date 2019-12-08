@@ -2,8 +2,8 @@
  <div>
   <ul *ngFor = "let patient of patients let i = index">
     <li>
-      (Unique ID: {{patient._id}}) ... (Last Name: {{patient.firstName  }}) ... (Perscription ID: {{patient.lastName}}) (index {{i}}) 
-      Perscription Refills Left is: 2.... 
+      (Unique ID: {{patient._id}}) ... (Last Name: {{patient.firstName  }}) ... (Perscription ID: {{patient.lastName}})  
+      Perscription Refills Left is: {{i}}.... 
       Perscription Status is: Ready
       <button mat-button color="warn" (click)="onDelete(patient._id)">DELETE</button>
       <button mat-button color="accent" [routerLink]="['/editPatient', patient._id]">UPDATE</button>
