@@ -2,7 +2,7 @@
  <div>
   <ul *ngFor = "let patient of patients let i = index">
     <li>
-      (Unique ID: {{patient._id}}) ... (Last Name: {{patient.firstName  }}) ... (Perscription ID: {{patient.lastName}})  
+      (index {{i}}) - (Unique ID: {{patient._id}}) ... (Last Name: {{patient.firstName  }}) ... (Perscription ID: {{patient.lastName}})... 
       Perscription Refills Left is: {{i}}.... 
       Perscription Status is: Ready
       <button mat-button color="warn" (click)="onDelete(patient._id)">DELETE</button>
