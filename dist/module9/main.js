@@ -45,7 +45,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<p>list-patients works!</p>\n <div>\n  <ul *ngFor = \"let patient of patients let i = index\">\n    <li>\n      (Unique ID: {{patient._id}}) ... (Last Name: {{patient.firstName  }}) ... (Perscription ID: {{patient.lastName}}) (index {{i}}) \n      Perscription Refills Left is: 2.... \n      Perscription Status is: Ready\n      <button mat-button color=\"warn\" (click)=\"onDelete(patient._id)\">DELETE</button>\n      <button mat-button color=\"accent\" [routerLink]=\"['/editPatient', patient._id]\">UPDATE</button>\n    </li>\n  </ul>\n</div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<p>list-patients works!</p>\n <div>\n  <ul *ngFor = \"let patient of patients let i = index\">\n    <li>\n      (index {{i}}) - (Unique ID: {{patient._id}}) ... (Last Name: {{patient.firstName  }}) ... (Perscription ID: {{patient.lastName}})... \n      Perscription Refills Left is: {{i}}.... \n      Perscription Status is: Ready\n      <button mat-button color=\"warn\" (click)=\"onDelete(patient._id)\">DELETE</button>\n      <button mat-button color=\"accent\" [routerLink]=\"['/editPatient', patient._id]\">UPDATE</button>\n    </li>\n  </ul>\n</div>");
 
 /***/ }),
 
